@@ -1,0 +1,13 @@
+{
+	"image": "rust:latest",
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/zsh-plugins": true
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"rust-lang.rust-analyzer"
+			]
+		}
+	}
+}
