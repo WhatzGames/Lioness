@@ -1,13 +1,18 @@
 {
 	"image": "rust:latest",
-	"features": {
-		"ghcr.io/devcontainers-contrib/features/zsh-plugins": true
-	},
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"rust-lang.rust-analyzer"
+				"rust-lang.rust-analyzer",
+				"mhutchie.git-graph"
 			]
 		}
-	}
+	},
+	"features": {
+		"ghcr.io/nils-geistmann/devcontainers-features/zsh:0": {
+			"theme": "robbyrussell",
+			"plugins": "git docker",
+			"desiredLocale": "en_US.UTF-8 UTF-8"
+		}
+	},
 }
